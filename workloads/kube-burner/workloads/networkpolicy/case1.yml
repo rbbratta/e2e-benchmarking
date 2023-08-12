@@ -83,9 +83,9 @@ jobs:
         replicas: 3
         inputVars:
           job_iterations: {{.TEST_JOB_ITERATIONS}}
-      
+
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 2
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "unused"
