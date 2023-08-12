@@ -96,7 +96,7 @@ jobs:
           ingress_label: "bar"
 
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 5
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "foo"
@@ -107,7 +107,7 @@ jobs:
           set: "1"
 
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 5
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "foo"
@@ -118,7 +118,7 @@ jobs:
           set: "2"
 
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 5
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "foo"
@@ -129,7 +129,7 @@ jobs:
           set: "3"
 
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 5
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "foo"
@@ -140,7 +140,7 @@ jobs:
           set: "4"
 
       - objectTemplate: nginx.yml
-        replicas: 20
+        replicas: 5
         inputVars:
           nodeSelector: "{{.POD_NODE_SELECTOR}}"
           label1: "foo"
