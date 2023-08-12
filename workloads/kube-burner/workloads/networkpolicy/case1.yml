@@ -80,7 +80,7 @@ jobs:
         replicas: 1
 
       - objectTemplate: case1-networkpolicy.yml
-        replicas: 3
+        replicas: {{.TEST_JOB_ITERATIONS}}
         inputVars:
           job_iterations: {{.TEST_JOB_ITERATIONS}}
 
